@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SpeedModifier : MonoBehaviour
 {
+
+    public float Modifier;
+    public float lastFor;
     // Start is called before the first frame update
     void Start()
     {
