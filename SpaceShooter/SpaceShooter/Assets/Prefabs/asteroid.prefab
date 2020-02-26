@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8963574450847637483}
   - component: {fileID: 6302354838995955841}
   - component: {fileID: 8145196863219462075}
+  - component: {fileID: 1149722023408095953}
+  - component: {fileID: 1530541585849581165}
   m_Layer: 0
   m_Name: asteroid
   m_TagString: Asteroid
@@ -118,3 +120,31 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.835
+--- !u!114 &1149722023408095953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618323988811303947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24766a5de14eec4bb7be64775353463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &1530541585849581165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618323988811303947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1242ff61ecac44ea931f6df89a51e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDamage: 1
+  maxDamage: 25
+  damage: 0

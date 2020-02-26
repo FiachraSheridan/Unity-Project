@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
 
     public float speed = 5;
     
+
     Rigidbody2D body;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,20 @@ public class EnemyController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Kill")
         {
+
+            
+
             Destroy(gameObject);
         }
+        else if(collision.gameObject.tag == "Bullet")
+        {
+            PlayerData.enemyDead++;
+        }
+        else if(collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+        
+        
     }
 }
