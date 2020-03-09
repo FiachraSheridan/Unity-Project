@@ -9,7 +9,16 @@ public class RoofToggle : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Vehicle"))
         {
-            
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(!collision.gameObject.CompareTag("Player") || !collision.gameObject.CompareTag("Vehicle"))
+        {
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 }
